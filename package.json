@@ -1,0 +1,102 @@
+{
+  "name": "markem",
+  "displayName": "markem",
+  "description": "Harpoon like functionality for VS Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "markem.markFile",
+        "title": "Markem: Mark File"
+      },
+      {
+        "command": "markem.showMarks",
+        "title": "Markem: Show Marks"
+      },
+      {
+        "command": "markem.removeMark",
+        "title": "Markem: Remove Mark"
+      },
+      {
+        "command": "markem.clearAllMarks",
+        "title": "Markem: Clear All Marks"
+      },
+      {
+        "command": "markem.nextFile",
+        "title": "Markem: Next File"
+      },
+      {
+        "command": "markem.previousFile",
+        "title": "Markem: Previous File"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "markem.markFile",
+        "key": "ctrl+alt+m",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "markem.showMarks",
+        "key": "ctrl+alt+s",
+        "when": "true"
+      },
+      {
+        "command": "markem.removeMark",
+        "key": "ctrl+alt+r",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "markem.clearAllMarks",
+        "key": "ctrl+alt+c",
+        "when": "true"
+      },
+      {
+        "command": "markem.nextFile",
+        "key": "ctrl+alt+j",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "markem.previousFile",
+        "key": "ctrl+alt+k",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.102.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.25.3",
+    "eslint": "^9.25.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.8.3"
+  }
+}
