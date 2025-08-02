@@ -1,9 +1,8 @@
 # Markem
 
-Harpoon (nvim extension) like functionality for VSCode
+Harpoon (Neovim extension) like functionality for VSCode
 
 Why?
-Listen to ThrPrimeagen on the usefulness of Harpoon.
+Listen to ThePrimeagen on the usefulness of Harpoon.
 
-[![ThePrimaegen on Harpoon](https://img.youtube.com/vi/Qnos8aApa9g/maxresdefault.jpg)](https://youtu.be/Qnos8aApa9g?si=44eiESNNIJMWlqnq&t=1m12s)
-
+[![ThePrimaegen on Harpoon](https://github.com/user-attachments/assets/e5d754e0-77ca-4c03-889a-c2dc022f748b)](https://www.youtube.com/watch?v=Qnos8aApa9g&t=1m13s)

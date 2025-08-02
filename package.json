@@ -1,7 +1,12 @@
 {
   "name": "markem",
+  "publisher": "toff",
   "displayName": "markem",
   "description": "Harpoon like functionality for VS Code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tam2628/markem"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.102.0"
