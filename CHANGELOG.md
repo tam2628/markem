@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - More than one mark for the same file
 - Map files to num keys based on the order eg. Ctrl + Alt + (1/2/3) etc
 
+## [0.0.4] - 2025-08-03
+
+### Changed
+
+- Minimum support version for vscode engine to 1.60.0
+
 ## [0.0.3] - 2025-08-03
 
 ### Fixed
